@@ -207,10 +207,10 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!wasHit)
         {Health -= takenDamage;
-        StartCoroutine(makeInvincible(3f));}
+        StartCoroutine(MakeInvincible(3f));}
     }
 
-    public IEnumerator makeInvincible(float t){
+    public IEnumerator MakeInvincible(float t){
         wasHit = true;
         Debug.Log("I am invincible!");
         yield return new WaitForSeconds(t);
